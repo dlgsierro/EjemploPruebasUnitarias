@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PersonSolution
 {
@@ -10,10 +8,10 @@ namespace PersonSolution
         {
             Boolean result = false;
             if (person1 != null && person2 != null &&
-                person1.FirstName == person2.FirstName &&
-                person1.LastName == person2.LastName &&
-                person1.Age == person2.Age &&
-                person1.PersonGender == person2.PersonGender)
+                person1.GetFirstName() == person2.GetFirstName() &&
+                person1.GetLastName() == person2.GetLastName() &&
+                person1.GetAge() == person2.GetAge() &&
+                person1.GetPersonGender() == person2.GetPersonGender())
             {
                 result = true;
             }
@@ -26,7 +24,7 @@ namespace PersonSolution
             Boolean result = false;
 
             if (person1 != null && person2 != null &&
-                person1.FirstName == person2.FirstName)
+                person1.GetFirstName() == person2.GetFirstName())
                 result = true;
 
             return result;
@@ -37,7 +35,7 @@ namespace PersonSolution
             Boolean result = false;
 
             if (person1 != null && person2 != null &&
-                person1.Age == person2.Age)
+                person1.GetAge() == person2.GetAge())
                 result = true;
 
             return result;
@@ -46,10 +44,10 @@ namespace PersonSolution
         public Person BuildPerson(String firstName, String lastName, int age, Person.Gender gender)
         {
             Person person = new Person();
-            person.FirstName = firstName;
-            person.LastName = lastName;
-            person.Age = age;
-            person.PersonGender = gender;
+            person.SetFirstName(firstName);
+            person.SetLastName(lastName);
+            person.SetAge(age);
+            person.SetPersonGender(gender);
             return person;
         }
 
