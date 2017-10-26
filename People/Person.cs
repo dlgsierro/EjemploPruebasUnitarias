@@ -11,45 +11,10 @@ namespace PersonSolution
         private String lastName;
         private Gender gender;
 
-        public string GetFirstName()
-        {
-            return this.firstName;
-        }
-
-        public void SetFirstName(string firstName)
-        {
-            this.firstName = firstName;
-        }
-
-        public string GetLastName()
-        {
-            return this.lastName;
-        }
-
-        public void SetLastName(string lastName)
-        {
-            this.lastName = lastName;
-        }
-
-        public int GetAge()
-        {
-            return this.age;
-        }
-
-        public void SetAge(int age)
-        {
-            this.age = age;
-        }
-
-        public Gender GetPersonGender()
-        {
-            return this.gender;
-        }
-
-        public void SetPersonGender(Gender gender)
-        {
-            this.gender = gender;
-        }
+        public string LastName { get => lastName; set => lastName = value; }
+        public int Age { get => age; set => age = value; }
+        public string FirstName { get => firstName; set => firstName = value; }
+        public Gender PersonGender { get => gender; set => gender = value; }
 
     }
 }
