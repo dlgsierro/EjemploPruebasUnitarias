@@ -2,9 +2,8 @@
 
 namespace PersonSolution
 {
-    public class Person
+    public partial class Person
     {
-        public enum Gender { MALE, FEMALE };
 
         private int age;
         private String firstName;
