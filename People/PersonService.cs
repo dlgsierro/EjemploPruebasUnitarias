@@ -4,7 +4,7 @@ namespace PersonSolution
 {
     public class PersonService
     {
-        public Boolean AreEqual(Person person1, Person person2)
+        public static Boolean AreEqual(Person person1, Person person2)
         {
             Boolean result = false;
             if (person1 != null && person2 != null &&
@@ -19,7 +19,7 @@ namespace PersonSolution
             return result;
         }
 
-        public Boolean AreNamesake(Person person1, Person person2)
+        public static Boolean AreNamesake(Person person1, Person person2)
         {
             Boolean result = false;
 
@@ -30,7 +30,7 @@ namespace PersonSolution
             return result;
         }
 
-        public Boolean HaveSameAge(Person person1, Person person2)
+        public static Boolean HaveSameAge(Person person1, Person person2)
         {
             Boolean result = false;
 
@@ -41,7 +41,7 @@ namespace PersonSolution
             return result;
         }
 
-        public Person BuildPerson(String firstName, String lastName, int age, Person.Gender gender)
+        public static Person BuildPerson(String firstName, String lastName, int age, Person.Gender gender)
         {
             Person person = new Person();
             person.SetFirstName(firstName);
