@@ -6,9 +6,9 @@ namespace PersonSolution
     {
         public enum Gender { MALE, FEMALE };
 
+        private int age;
         private String firstName;
         private String lastName;
-        private int age;
         private Gender gender;
 
         public string GetFirstName()

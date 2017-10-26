@@ -8,8 +8,8 @@
     <ProjectGuid>{431A9F38-B95A-4E3C-AE92-742F00100E9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PersonUnitTest</RootNamespace>
-    <AssemblyName>PersonUnitTest</AssemblyName>
+    <RootNamespace>People.Test</RootNamespace>
+    <AssemblyName>People.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PersonLibrary\PersonLibrary.csproj">
+    <ProjectReference Include="..\People\People.csproj">
       <Project>{cc2711e5-a432-422e-8541-e4d8e05b9d85}</Project>
-      <Name>PersonLibrary</Name>
+      <Name>People</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
